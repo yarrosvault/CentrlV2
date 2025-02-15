@@ -3,7 +3,7 @@
 # 📌 Getting Started With CentrlV2
 ### Lets Start With Initliazing CentrlV2.
 ```lua
-local centrlV2 = loadstring(game:HttpGet("feb31",true))()
+local centrl = loadstring(game:HttpGet("https://raw.githubusercontent.com/yarrosvault/CentrlV2/refs/heads/main/centrl",true))()
 ```
 ### Now Lets Set Up The Loader
 ```lua
