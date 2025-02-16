@@ -87,3 +87,25 @@ s1:createSlider({
 })
 
 ```
+### Setting Up Dropdown
+```lua
+s2:createDropdown({
+	Title = "Mode",
+	Options = {'Mode 1', 'Mode 2', 'Mode 3', 'RAGE MODEE'},
+	Multi = false, -- Multi Select?
+	Callback = function(mode)
+		print(mode)
+	end,
+}) 
+```
+
+### ColorPicker 
+```lua
+s2:createColorpicker({
+	Title = 'Pepper Color',
+	Color = Color3.fromRGB(255, 0, 4), -- Starter Color
+	Callback = function(v)
+		print(v)
+	end,
+})
+```
