@@ -37,3 +37,53 @@ local s1 = Tab:IntSection('Main', {
 	Side = 'L' -- Side of section ('L' - Left, 'R' - Right)
 })
 ```
+### Setting Up Buttons
+```lua
+s1:createButton({
+	Title = 'Button',
+	Callback = function()
+	end,
+})
+```
+
+### Setting Up Toggle
+```lua
+s1:createToggle({
+	Title = 'Toggle',
+	Config = true, -- keybind n stuff
+	Value = false, -- Starting Value
+	Callback = function(v)
+	end,
+})
+```
+
+### Setting Up Slider (kinda complicated)
+```lua
+s1:createSlider({
+	Title = 'Modifiers',
+	Sliders = {
+		{
+			title = 'Strength',
+			range = {1,120},
+			increment = 1,
+			startvalue = 16,
+			callback = function(lol)
+
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = lol
+
+			end,
+		},
+		{
+			title = 'Smoothness',
+			range = {1,200},
+			increment = 1,
+			startvalue = 16,
+			callback = function(lol)
+
+
+			end,
+		},
+	}
+})
+
+```
